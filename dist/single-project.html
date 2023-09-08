@@ -1,0 +1,511 @@
+<html dir="rtl" lang="fa" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="styles.css" rel="stylesheet">
+    <title>معرفی پروژه</title>
+</head>
+
+<body class="select-none">
+
+    <!-- header -->
+    <header class="py-3 px-10 shadow-md z-10 relative">
+        <div class="container mx-auto">
+            <div class="flex items-center justify-between">
+                <!-- avatar && search -->
+                <div class="flex items-center gap-3">
+                    <!-- avatar -->
+                    <div class="flex items-center gap-2 cursor-pointer">
+                        <img alt="avatar" src="img/avatar-74af333f44ebb671f962ab4df2678e4f.jpg"
+                            class="rounded-full w-10 h-10">
+                        <p>yakoob71</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 text-primary h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </div>
+                    <!-- search -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                    </svg>
+                </div>
+                <!-- logo -->
+                <a class="cursor-pointer"><img alt="logo" src="img/fa-logo.png" class="w-20 h-20 rounded-full"></a>
+                <!-- chat -->
+                <div class="flex items-center gap-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 01-1.161.886l-.143.048a1.107 1.107 0 00-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 01-1.652.928l-.679-.906a1.125 1.125 0 00-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 00-8.862 12.872M12.75 3.031a9 9 0 016.69 14.036m0 0l-.177-.529A2.25 2.25 0 0017.128 15H16.5l-.324-.324a1.453 1.453 0 00-2.328.377l-.036.073a1.586 1.586 0 01-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 01-5.276 3.67m0 0a9 9 0 01-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 cursor-pointer text-primary animate-bounce">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main class="pb-8">
+
+        <!-- project title -->
+        <section class="bg-gray-100 px-56 py-10">
+            <h1 class="text-3xl text-customgray font-bold">رفع مشکلات سئو و کنسول گوگل سایت بر اساس ریپورت های سرعت لود
+            </h1>
+            <div class="flex items-center justify-between mt-8">
+                <div>
+                    <div class="flex items-center gap-5">
+                        <div class="border-primary rounded-md px-3 py-2 border-2 cursor-pointer">پروژه باز</div>
+                        <p> ایجاد شده توسط </p>
+                        <a class="text-primary font-bold cursor-pointer">amirsw1</a>
+                    </div>
+                    <div class="flex items-center gap-2 font-bold text-white mt-4">
+                        <a class="bg-primary rounded-md py-2 px-4 cursor-pointer">ارسال پیشنهاد</a>
+                        <div class="bg-primary rounded-md py-2 px-4 cursor-pointer">...</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="text-center">
+                        <p>پیشنهادها</p>
+                        <h3 class="text-xl text-gray-500 font-bold mt-2">1</h3>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <a class="cursor-pointer block">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                class="bi bi-twitter text-customgray w-4 h-4" viewBox="0 0 16 16">
+                                <path
+                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="cursor-pointer block">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                class="bi bi-telegram text-customgray w-4 h-4" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z">
+                                </path>
+                            </svg>
+                        </a>
+                        <div class="flex items-center gap-1 p-2 border text-gray-500">
+                            <p>https://ponisha.ir/project/354595</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-front cursor-pointer" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2V2zm5 10v2a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2v5a2 2 0 0 1-2 2H5z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- project description -->
+        <section class="px-56 py-10">
+            <div class="grid grid-cols-12 gap-4">
+                <div class="col-span-8">
+                    <h3 class="text-lg font-bold text-primary"> توضیحات پروژه </h3>
+                    <div class="text-customgray flex flex-col gap-5 mt-4">
+                        <p>سلام</p>
+                        <p> در افزونه دکان نیاز دارم تغییرات زیر اعمال شود:</p>
+                        <ul>
+                            <li>- هرکسی که داخل دکان ثبت نام کرد، برای وارد کردن هر محصول یک مبلغ مشخص پرداخت کنه</li>
+                            <li>- گزارش پرداخت‌هاشو بتونه در پنل ببینه</li>
+                            <li>- فروشنده قابلیت نردبان و... رو برای محصولاتش قرار بده و این قابلیت محدود (ماهانه یا
+                                ...) و یا نامحدود باشه و بابت هرکدوم قیمتی تعیین بشه و پرداخت کنه</li>
+                            <li>- این قابلیت دارای شرت کد باشه که بتونیم در سایت استفاده کنیم</li>
+                            <li>- موارد بالا قابلیت فعال بودن یا نبودن داشته باشه (که اگر زمانی نخواستن از این موارد
+                                استفاده کنن بتونن از امکانات دیفالت دکان استفاده کنن)</li>
+                        </ul>
+                        <p>برای هر دسته بندی ویژگی های خاصی تعریف شود (در بخش ویژگی ها)</p>
+                        <p> فروشنده در پنل دکان زمانی که دسته بندی رو انتخاب کرد، ویژگی‌های اون دسته بندی به همراه
+                            گزینه‌های
+                            پیشنهادی بهش نمایش دادا بشه و اگر در لیست نبود بتونه اضافه کنه و اگر خالی موند با یک کلمه
+                            مشخص
+                            (مانند تعیین نشده) در فرانت برای کاربر نمایش بده
+                        </p>
+                    </div>
+                </div>
+                <div class="col-span-4">
+                    <!-- project price -->
+                    <h3 class="text-lg font-bold text-primary"> بودجه پروژه </h3>
+                    <p class="text-customgray mt-3"> 25,000,000ریال - 100,000,000ریال </p>
+                    <h3 class="text-lg font-bold text-primary mt-4"> مهارت های مورد نیاز </h3>
+                    <!-- skills tags -->
+                    <div class="flex items-center gap-2 flex-wrap mt-4">
+                        <a class="border-primary text-gray-600 rounded-md px-3 py-2 border-2 cursor-pointer">پی اچ پی (PHP)</a>
+                        <a class="border-primary text-gray-600 rounded-md px-3 py-2 border-2 cursor-pointer">برنامه نویسی تحت وب</a>
+                        <a class="border-primary text-gray-600 rounded-md px-3 py-2 border-2 cursor-pointer">لاراول (Laravel)</a>
+                        <a class="border-primary text-gray-600 rounded-md px-3 py-2 border-2 cursor-pointer">نود جی اس (Node.js)</a>
+                    </div>
+                </div>
+            </div>
+            <!-- suggests list -->
+            <div class="grid grid-cols-4 gap-6 mt-10">
+               <div class="p-3 bg-gray-300 rounded-lg">
+                 <a class="w-full h-52 bg-white group border shadow-md flex items-center justify-center cursor-pointer">
+                   <!-- front -->
+                   <div class="text-center group-hover:hidden">
+                     <div class="flex flex-col items-center justify-center gap-3">
+                       <div class="relative">
+                         <img alt="avatar" src="img/avatar-74af333f44ebb671f962ab4df2678e4f.jpg" class="rounded-full w-12 h-12">
+                         <span class="block w-4 h-4 rounded-full bg-green-500 absolute bottom-2 -right-2 animate-pulse"></span>
+                       </div>
+                       <h4 class="text-primary font-bold">yakoob71</h4>
+                       <div class="flex items-center gap-2 text-amber-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                  </svg>
+                       </div>
+                       <p>در 20 روز</p>
+                     </div>
+                   </div>
+                   <!-- back -->
+                   <div class="text-gray-600 p-3 hidden group-hover:block">
+                    <p class="font-bold">1786 میانگین امتیاز</p>
+                    <div class="flex items-center gap-2 flex-wrap">
+                        <div class="flex gap-2 mt-3">
+                            <span class="w-2 h-2 block rounded-full bg-pink-300"></span>
+                            <div>
+                              <p class="font-bold mb-0">0</p>
+                              <p class="text-xs">نود جی اس (Node.js)</p>
+                            </div>
+                          </div>
+                          <div class="flex gap-2 mt-1">
+                            <span class="w-2 h-2 block rounded-full bg-purple-300"></span>
+                            <div>
+                              <p class="font-bold mb-0">0</p>
+                              <p class="text-xs">پی اچ پی (PHP)</p>
+                            </div>
+                          </div>
+                          <div class="flex gap-2 mt-1">
+                            <span class="w-2 h-2 block rounded-full bg-green-300"></span>
+                            <div>
+                              <p class="font-bold mb-0">0</p>
+                              <p class="text-xs">برنامه نویسی تحت وب</p>
+                            </div>
+                          </div>
+                    </div>
+                   </div>
+                 </a>
+                 <div class="mt-3 flex items-center justify-between">
+                    <p class="text-gray-600">1 ساعت</p>
+                    <div class="flex items-center gap-2">
+                        <p class="font-bold text-amber-900">برنزی</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-award text-amber-900" viewBox="0 0 16 16">
+                            <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z"/>
+                            <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+                          </svg>
+                    </div>
+                 </div>
+               </div>
+               <div class="p-3 bg-gray-300 rounded-lg">
+                 <a class="w-full h-52 bg-white group border shadow-md flex items-center justify-center cursor-pointer">
+                   <!-- front -->
+                   <div class="text-center group-hover:hidden">
+                     <div class="flex flex-col items-center justify-center gap-3">
+                       <div class="relative">
+                         <img alt="avatar" src="img/avatar-74af333f44ebb671f962ab4df2678e4f.jpg" class="rounded-full w-12 h-12">
+                         <span class="block w-4 h-4 rounded-full bg-gray-500 absolute bottom-2 -right-2 animate-pulse"></span>
+                       </div>
+                       <h4 class="text-primary font-bold">yakoob71</h4>
+                       <div class="flex items-center gap-2 text-amber-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                  </svg>
+                       </div>
+                       <p>در 20 روز</p>
+                     </div>
+                   </div>
+                   <!-- back -->
+                   <div class="text-gray-600 p-3 hidden group-hover:block">
+                    <p class="font-bold">1786 میانگین امتیاز</p>
+                    <div class="flex items-center gap-2 flex-wrap">
+                        <div class="flex gap-2 mt-3">
+                            <span class="w-2 h-2 block rounded-full bg-pink-300"></span>
+                            <div>
+                              <p class="font-bold mb-0">0</p>
+                              <p class="text-xs">نود جی اس (Node.js)</p>
+                            </div>
+                          </div>
+                          <div class="flex gap-2 mt-1">
+                            <span class="w-2 h-2 block rounded-full bg-purple-300"></span>
+                            <div>
+                              <p class="font-bold mb-0">0</p>
+                              <p class="text-xs">پی اچ پی (PHP)</p>
+                            </div>
+                          </div>
+                          <div class="flex gap-2 mt-1">
+                            <span class="w-2 h-2 block rounded-full bg-green-300"></span>
+                            <div>
+                              <p class="font-bold mb-0">0</p>
+                              <p class="text-xs">برنامه نویسی تحت وب</p>
+                            </div>
+                          </div>
+                    </div>
+                   </div>
+                 </a>
+                 <div class="mt-3 flex items-center justify-between">
+                    <p class="text-gray-600">1 ساعت</p>
+                    <div class="flex items-center gap-2">
+                        <p class="font-bold text-amber-900">برنزی</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-award text-amber-900" viewBox="0 0 16 16">
+                            <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z"/>
+                            <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+                          </svg>
+                    </div>
+                 </div>
+               </div>
+               <div class="p-3 bg-gray-300 rounded-lg">
+                 <a class="w-full h-52 bg-white group border shadow-md flex items-center justify-center cursor-pointer">
+                   <!-- front -->
+                   <div class="text-center group-hover:hidden">
+                     <div class="flex flex-col items-center justify-center gap-3">
+                       <div class="relative">
+                         <img alt="avatar" src="img/avatar-74af333f44ebb671f962ab4df2678e4f.jpg" class="rounded-full w-12 h-12">
+                         <span class="block w-4 h-4 rounded-full bg-green-500 absolute bottom-2 -right-2 animate-pulse"></span>
+                       </div>
+                       <h4 class="text-primary font-bold">yakoob71</h4>
+                       <div class="flex items-center gap-2 text-amber-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                  </svg>
+                       </div>
+                       <p>در 20 روز</p>
+                     </div>
+                   </div>
+                   <!-- back -->
+                   <div class="text-gray-600 p-3 hidden group-hover:block">
+                    <p class="font-bold">1786 میانگین امتیاز</p>
+                    <div class="flex items-center gap-2 flex-wrap">
+                        <div class="flex gap-2 mt-3">
+                            <span class="w-2 h-2 block rounded-full bg-pink-300"></span>
+                            <div>
+                              <p class="font-bold mb-0">0</p>
+                              <p class="text-xs">نود جی اس (Node.js)</p>
+                            </div>
+                          </div>
+                          <div class="flex gap-2 mt-1">
+                            <span class="w-2 h-2 block rounded-full bg-purple-300"></span>
+                            <div>
+                              <p class="font-bold mb-0">0</p>
+                              <p class="text-xs">پی اچ پی (PHP)</p>
+                            </div>
+                          </div>
+                          <div class="flex gap-2 mt-1">
+                            <span class="w-2 h-2 block rounded-full bg-green-300"></span>
+                            <div>
+                              <p class="font-bold mb-0">0</p>
+                              <p class="text-xs">برنامه نویسی تحت وب</p>
+                            </div>
+                          </div>
+                    </div>
+                   </div>
+                 </a>
+                 <div class="mt-3 flex items-center justify-between">
+                    <p class="text-gray-600">1 ساعت</p>
+                    <div class="flex items-center gap-2">
+                        <p class="font-bold text-yellow-600">طلایی</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-award text-yellow-600" viewBox="0 0 16 16">
+                            <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z"/>
+                            <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+                          </svg>
+                    </div>
+                 </div>
+               </div>
+               <div class="p-3 bg-gray-300 rounded-lg">
+                 <a class="w-full h-52 bg-white group border shadow-md flex items-center justify-center cursor-pointer">
+                   <!-- front -->
+                   <div class="text-center group-hover:hidden">
+                     <div class="flex flex-col items-center justify-center gap-3">
+                       <div class="relative">
+                         <img alt="avatar" src="img/avatar-74af333f44ebb671f962ab4df2678e4f.jpg" class="rounded-full w-12 h-12">
+                         <span class="block w-4 h-4 rounded-full bg-red-500 absolute bottom-2 -right-2 animate-pulse"></span>
+                       </div>
+                       <h4 class="text-primary font-bold">yakoob71</h4>
+                       <div class="flex items-center gap-2 text-amber-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                  </svg>
+                       </div>
+                       <p>در 20 روز</p>
+                     </div>
+                   </div>
+                   <!-- back -->
+                   <div class="text-gray-600 p-3 hidden group-hover:block">
+                    <p class="font-bold">1786 میانگین امتیاز</p>
+                    <div class="flex items-center gap-2 flex-wrap">
+                        <div class="flex gap-2 mt-3">
+                            <span class="w-2 h-2 block rounded-full bg-pink-300"></span>
+                            <div>
+                              <p class="font-bold mb-0">0</p>
+                              <p class="text-xs">نود جی اس (Node.js)</p>
+                            </div>
+                          </div>
+                          <div class="flex gap-2 mt-1">
+                            <span class="w-2 h-2 block rounded-full bg-purple-300"></span>
+                            <div>
+                              <p class="font-bold mb-0">0</p>
+                              <p class="text-xs">پی اچ پی (PHP)</p>
+                            </div>
+                          </div>
+                          <div class="flex gap-2 mt-1">
+                            <span class="w-2 h-2 block rounded-full bg-green-300"></span>
+                            <div>
+                              <p class="font-bold mb-0">0</p>
+                              <p class="text-xs">برنامه نویسی تحت وب</p>
+                            </div>
+                          </div>
+                    </div>
+                   </div>
+                 </a>
+                 <div class="mt-3 flex items-center justify-between">
+                    <p class="text-gray-600">1 ساعت</p>
+                    <div class="flex items-center gap-2">
+                        <p class="font-bold text-gray-600">نقره ای</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-award text-gray-600" viewBox="0 0 16 16">
+                            <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z"/>
+                            <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+                          </svg>
+                    </div>
+                 </div>
+               </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="border-t shadow-4xl mt-12">
+        <div class="container mx-auto">
+            <div class="flex items-center justify-around pt-10">
+                <!-- logo -->
+                <div>
+                    <a class="block cursor-pointer"><img class="w-24 h-24 rounded-full" alt="logo"
+                            src="img/fa-logo.png"></a>
+                    <ul class="flex items-center gap-3 mt-3">
+                        <li><a class="text-primary cursor-pointer font-bold">پاسخ آنلاین</a></li>
+                        <li><a class="text-primary cursor-pointer font-bold">مارکت اینجا</a></li>
+                    </ul>
+                </div>
+                <!-- menu -->
+                <ul class="flex items-center gap-5">
+                    <li><a class="text-customgray cursor-pointer">درباره ما</a></li>
+                    <li><a class="text-customgray cursor-pointer">نمونه کارها</a></li>
+                    <li><a class="text-customgray cursor-pointer">پروژه‌ها</a></li>
+                    <li><a class="text-customgray cursor-pointer">مسابقه ها</a></li>
+                    <li><a class="text-customgray cursor-pointer">فریلنسرها</a></li>
+                </ul>
+                <!-- socials -->
+                <div class="flex items-center gap-4">
+                    <a class="cursor-pointer block">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="bi bi-linkedin text-customgray w-6 h-6" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                        </svg>
+                    </a>
+                    <a class="cursor-pointer block">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="bi bi-instagram text-customgray w-6 h-6" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                        </svg>
+                    </a>
+                    <a class="cursor-pointer block">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="bi bi-twitter text-customgray w-6 h-6" viewBox="0 0 16 16">
+                            <path
+                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                        </svg>
+                    </a>
+                    <a class="cursor-pointer block">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            class="bi bi-telegram text-customgray w-6 h-6" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <!-- copy right -->
+            <div class="py-4 text-center text-customgray font-bold">
+                <p class="flex items-center gap-2 justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16">
+                        <path
+                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z" />
+                    </svg> تمام حقوق مادی و معنوی متعلق به پونیشا می‌باشد</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
+
+<!-- npx tailwindcss -i styles.css -o ./dist/styles.css --watch -->
